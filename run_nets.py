@@ -14,6 +14,7 @@ def run_net( ifmap_sram_size=1,
              offset_list = [0, 10000000, 20000000]
             ):
 
+    #config中的单位是MB?
     ifmap_sram_size *= 1024
     filter_sram_size *= 1024
     ofmap_sram_size *= 1024
@@ -47,7 +48,7 @@ def run_net( ifmap_sram_size=1,
 
 
     first = True
-    
+    # csv文件 
     for row in param_file:
         if first:
             first = False

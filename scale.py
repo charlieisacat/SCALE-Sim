@@ -116,6 +116,7 @@ class scale:
 
         net_name = self.topology_file.split('/')[-1].split('.')[0]
         #print("Net name = " + net_name)
+        #在内存中的位置?
         offset_list = [self.ifmap_offset, self.filter_offset, self.ofmap_offset]
 
         r.run_net(  ifmap_sram_size  = int(self.isram_min),
